@@ -1,0 +1,90 @@
+<!DOCTYPE html><a href="cart.html"></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="../images/delivery-icon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Delivery</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <ul>
+                <li class="notlogo"><a href="../index.html"><img src="../images/home-icon.png" alt="home icon" width="45" height="45" style="position:relative; top: 15px;">HOME</a></li>
+                <li class="notlogo"><a class="navpart" href="delivery.html"><img src="../images/delivery-icon.png" alt="delivery icon" width="50" height="50" style="position:relative; top: 19px;">DELIVERY</a></li>
+                <li class="notlogo"><a id="dropdowncart" href="cart.html"></href=>><img src="../images/cart-icon.png" alt="cart icon" width="40" height="40" style="position:relative; top: 12px;">CART<span id="cartnotification"></span></a></li>
+                <li class="notlogo"><a href="CV.html">CV</a></li>
+            </ul>   
+        </nav>
+        <div id="categoriesclothing">
+            <ul>
+                <li><a href="electronics.html">Electronics</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="furniture.html">Furnitures</a></li>
+                <li><a href="cosmetics.html">Cosmetics</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="sportinggoods.html">Sporting Goods</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="cartsection">
+        <h1>MY CART</h1> 
+        <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+            
+        </div>
+        <a href="delivery.html"><div class="checkout">CHECK OUT</div></a>
+    </div>   
+    </div>
+<div class="main">
+    <form action="" name="myForm">
+        Do you live: <br>
+        <br><label for="Inside Nigeria">
+            <input name="location" type="radio" value="Inside Nigeria"> 
+        </label>Inside Nigeria<br>
+        <label for="Outside Nigeria">
+            <input name="location" type="radio" value="Outside Nigeria"> 
+        </label>Outside Nigeria<br><br>
+
+
+
+        Overnight delivery?
+        <br><label for="YES">
+            <input name="deliveryType" type="radio" value="YES">
+        </label> YES<br>
+
+        <label for="NO">
+            <input name="deliveryType" type="radio" value="NO">
+        </label>NO <br>
+        <br><label for="address">Enter your address here:</label>
+        <div class="text-area">
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+        
+        
+        <div class="confirm" onclick=" document.querySelector('#fullscreen').style.display = 'block'; ">CONFIRM</div>
+        
+    </form>
+</div>
+ <div id="fullscreen">
+    <div class="confirmation">
+        <img src="../images/confirm-icon.png" alt=""><p>Your order has been recieved and will be delivered to you soon.</p>
+        <div class="finish" onclick="window.location.replace('../index.html')">CONTINUE SHOPPING</div>
+    </div>
+ </div>
+    
+<script src="delivery.js"></script>
+        
+    </body>
+    </html>

@@ -1,0 +1,351 @@
+body {
+    font-family: 'Poppins Medium', sans-serif;
+}
+nav {
+    background-color: rgb(44, 175, 252);
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav ul {
+    padding-left: 10rem;
+    padding-bottom: 3rem;
+    padding-top: 0.1rem;
+    position: relative;
+    left: 3rem;
+    top: -2rem;
+}
+
+.notlogo {
+    position: relative;
+    top: -1rem;
+    right: 2rem;
+}
+
+nav li {
+    display: inline;
+    padding: 1rem 1rem 10rem 1rem;
+    padding-bottom: 3rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    z-index: -1;
+    position: relative;
+    right: 15rem;
+    top: -0.7rem;
+}
+
+#downarrow {
+    height: 1rem;
+    width: 1rem;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    top: 0.1rem;
+    right: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.rot {
+    transform: rotate(45deg);
+}
+#categories {
+    position: relative;
+    top: 5.1rem;
+    left: 47rem;
+    background-color: rgb(44, 175, 252);
+    color: white;
+    height: 16rem;
+    width: 15rem;
+    box-shadow: 1rem 1rem 4rem -1rem black;
+    display: none;
+}
+
+div li {
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    
+}
+div ul {
+    position: relative;
+    top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#clothinglogo {
+    height: 16vh;
+    width: 16vh;
+    position: relative;
+    top: 0.5rem;
+}
+
+.clothinglogo {
+    height: 10vh;
+    position: relative;
+    right: 15rem;
+}
+.clothingdivider {
+    height: 2vh;
+    width: 2vh;
+    background-color: black;
+    border-radius: 100%;
+    position: relative;
+    right: 15rem;
+    top: -2rem;
+}
+
+#categoriesclothing {
+    position: fixed;
+    top: 5.1rem;
+    left: 44rem;
+    background-color: rgb(44, 175, 252);
+    color: black;
+    height: 20rem;
+    width: 15rem;
+    box-shadow: 1rem 1rem 4rem -1rem black;
+    display: none;
+    z-index: 9;
+    animation: mymove 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes mymove {
+    from {top: -100px;}
+    to {top: 95px;}
+}
+
+.main {
+    height: 500px;
+    width: 800px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17rem;
+    color: white;
+}
+
+.confirm {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    height: 1.5rem;
+    margin-top: 2rem;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.confirm:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.navpart {
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 4rem;
+    color: black;
+    text-align: center;
+}
+
+.products-container{
+    max-width: 550px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+    padding-right: 5rem;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.products-container img {
+    font-size: 25px;
+    color: blue;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 2rem;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+.checkout {
+    background-color: rgb(44, 207, 44);
+    color: white;
+    padding: 1rem;
+    width: 6rem;
+    border-radius: 3rem;
+    margin-left: 15rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+.checkout:hover {
+    color: rgb(44, 207, 44);
+    background-color: white;
+    border: 2px solid rgb(44, 207, 44);
+}
+
+.navpart {
+    background-color: white;
+    border-radius: 1rem;
+    color: black;
+    padding: 1rem;
+}
+
+.cartsection {
+    margin-top: 3rem;
+    background-color: orange;
+    max-height: 590px;
+    width: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    left: 47rem;
+    z-index: 3;
+    box-shadow: -5rem -1rem 15rem -1rem black;
+    display: none;
+    z-index: 8;
+    animation: mymovecart 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes mymovecart {
+    from {top: -100px;}
+    to {top: 5px;}
+}
+
+#dropdowncart {
+    cursor: pointer;
+}
+
+.confirmation {
+    height: 20rem;
+    width: 20rem;
+    background-color: rgb(76, 250, 241);
+    color: black;
+    border-radius: 2rem;
+    position: relative;
+    top: 10rem;
+    left: 35rem;
+    z-index: 11;
+}
+
+.confirmation img {
+    height: 5rem;
+    width: 5rem;
+    padding-top: 1rem;
+    margin-left: 7rem;
+}
+
+.confirmation p {
+    padding-left: 2rem;
+    font-size: 20px;
+}
+
+.finish {
+    background-color: rgb(9, 214, 9);
+    color: white;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0rem;
+    left: 6rem;
+    cursor: pointer;
+}
+
+.finish:hover {
+    border: 1px solid rgb(9, 214, 9);
+    background-color: white;
+    color: rgb(9, 214, 9);
+}
+
+#fullscreen {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 88%, 0.551);
+    z-index: 10;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
